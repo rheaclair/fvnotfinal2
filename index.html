@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="app.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="header">
+                <h2>New Applicant Registration</h2>
+                 <p style="color: blue;">Required fields are indicated with *</p>
+          
+                <p style="color: red;">Email Address should be VALID and ACTIVE</p>
+
+            </div>
+            <form class="form">
+                <div class="form-control">
+                    <lable for="email" name="email"></lable>
+                    <input id="txtEmail" type="email" name="email" placeholder="Email address*" >
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <lable for="pwd" name="pwd"></lable>
+                    <input id="txtPwd" type="password" name="pwd" placeholder="Password*">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <lable for="conpwd" name="conpwd"></lable>
+                    <input id="txtConPwd" type="password" name="conpwd" placeholder="Confirm password*">
+                    <small>Error Message</small>
+                </div>
+
+                <br></br>
+
+                 <div class="form-control">
+                    <lable for="fn" name="fn"></lable>
+                    <input id="txtFirstname" type="text" name="fn" placeholder="First name*">
+                    <small>Error Message</small>
+                </div>
+
+                 <div class="form-control">
+                    <lable for="middlename" name="middlename"></lable>
+                    <input id="middlename" type="text" name="middlename" placeholder="Middle name*">
+                </div>
+
+                 <div class="form-control">
+                    <lable for="surname" name="surname"></lable>
+                    <input id="surname" type="text" name="surname" placeholder="Surname*">
+                </div>
+
+                <div class="row">
+                    <label for="qualifier">Qualifier</label>
+                    <select name="0" id="qualifier">
+                    <option value="-1">Qualifier</option>
+                    <option value="1">SR</option>
+                    <option value="2">JR</option>
+                    <option value="3">JR II</option>
+                    <option value="4">III</option>></option>
+                    <option value="5">IV</option>
+                    <option value="6">V</option>
+                    <option value="7">VI</option>
+                    <option value="8">VII</option>
+                    <option value="8">VIII</option>
+                </select>
+
+                <br></br>
+                <div class="row">
+                    <label for="gender">Gender*</label>
+                    <select name="0" id="qualifier">
+                    <option value="1">MALE</option>
+                    <option value="2">FEMALE</option>
+                    
+                </select>
+
+                 <div class="form-control">
+                    <lable for="birth" name="birth"></lable>
+                    <input id="birth" type="text" name="birth" placeholder="Birthday*">
+                </div>
+
+                <div class="form-control">
+                    <button>Register</button>
+                </div>
+
+            </form>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
